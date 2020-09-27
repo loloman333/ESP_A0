@@ -12,4 +12,4 @@ then
     exit 1
 fi
 
-`git pull upstream master`
+eval `git pull upstream master`
