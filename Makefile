@@ -35,3 +35,4 @@ upload:
 	git push;
 
 update:
+	./update.sh
