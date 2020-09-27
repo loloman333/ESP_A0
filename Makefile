@@ -36,3 +36,7 @@ upload:
 
 update:
 	./update.sh
+
+test:
+	./testrunner -c tests.toml
+	firefox result.html

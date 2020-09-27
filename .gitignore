@@ -1,3 +1,6 @@
 hello_world
 *.o
 build
+tmp
+result.html
+result.json
