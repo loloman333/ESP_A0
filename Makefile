@@ -1,23 +1,31 @@
-OBJS	= main.o
-SOURCE	= main.c
-HEADER	= 
-OUT		= hello_world
-CC	 	= clang
-FLAGS	= -g -c -Wall
-LFLAGS	= 
+EXEC ?= hello_world
+BUILD_DIR ?= ./build
 
-all: $(OBJS)
-	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
+SRCS := $(wildcard *.c)
+OBJS := $(SRCS:%=$(BUILD_DIR)/%.o)
 
-main.o: main.c
-	$(CC) $(FLAGS) main.c 
+CFLAGS = -g -Wall
+CC = clang
 
+SHELL:=/bin/bash
+.ONESHELL:
+
+$(BUILD_DIR)/$(EXEC): $(OBJS)
+	$(CC) $(OBJS) -o $@ $(LDFLAGS)
+
+$(BUILD_DIR)/%.c.o: %.c
+	$(MKDIR_P) $(dir $@)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(OUT)
+	rm -rf $(BUILD_DIR)
 
-run: $(OUT)
-	./$(OUT)
+run: $(BUILD_DIR)/$(EXEC)
+	$(BUILD_DIR)/$(EXEC)
+
+MKDIR_P ?= mkdir -p
+
+.PHONY: clean run upload
 
 upload:
 	@ echo "Please enter a commit message:"; \
@@ -25,3 +33,5 @@ upload:
 	git add .; \
 	git commit -m "$$cm"; \
 	git push;
+
+update:
