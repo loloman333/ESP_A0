@@ -12,4 +12,4 @@ then
     exit 1
 fi
 
-`git merge upstream/master`
+`git pull upstream master`
