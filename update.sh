@@ -9,7 +9,7 @@ fi
 UNSTAGED=`git status --porcelain | wc -l`
 if [ $UNSTAGED -ne 0 ]
 then
-    echo "unstaged changed. Please run make upload first"
+    echo "unstaged changed. Please commit your changes first"
     exit 1
 fi
 

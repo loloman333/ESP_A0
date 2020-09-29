@@ -27,13 +27,6 @@ MKDIR_P ?= mkdir -p
 
 .PHONY: clean run upload
 
-upload:
-	@ echo "Please enter a commit message:"; \
-	read cm; \
-	git add .; \
-	git commit -m "$$cm"; \
-	git push;
-
 update:
 	./update.sh
 
