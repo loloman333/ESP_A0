@@ -17,6 +17,7 @@
 [project_data]
 project_name = "build/hello_world"
 makefile_path = "."
+lib_path = "build/lib/libtest.so"
 
 [[testcases]]
 name = "basic_test"
@@ -24,3 +25,9 @@ testcase_type = "IO"
 description = "Basic test"
 exp_file = "tests/basic_test_out"
 exp_retvar = 0
+
+[[testcases]]
+name = "basic_unit"
+testcase_type = "UnitTest"
+description = "basic unit test"
+fname = "test_add"
