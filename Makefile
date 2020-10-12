@@ -49,6 +49,6 @@ MKDIR_P ?= mkdir -p
 update:
 	./update.sh
 
-test:
+test: $(BUILD_DIR)/lib/$(TEST_LIB)
 	./testrunner -c tests.toml
 	firefox result.html
