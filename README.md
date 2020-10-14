@@ -1,22 +1,28 @@
 ### Hello World
 
-This is an example assignment. To compile your code execute the following command in your terminal:
+Schreiben Sie ein Programm, welches den Text "Hi, my student-ID is %d\n" ausgibt, wobei %d durch Ihre Matrikelnummer ersetzt wird.
+und dann die Abgabefrist so wie bei den anderen Assignments.
 
+
+
+## Nützliche Befehle
+
+Kompiliere deinen Code:
 ```
 make
 ```
 
-To execute your code:
+Führe deinen Code aus:
 ```
 make run
 ```
 
-To get new updates from our upstream repository:
+Lade updates für das assignment runter:
 ```
 make update
 ```
 
-To test your code:
-```
-make test
-```
+## Spezifikation
+ * abzugebende Datei: main.c
+ * Abgabe bis *spätestens*: 25.10.2020 23:59 (in Österreich gültige Zeit)
+ * Abgabe muss über Gitlab stattfinden. Ein einfacher Commit auf den Master Branch reicht

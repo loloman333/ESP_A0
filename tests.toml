@@ -25,9 +25,3 @@ testcase_type = "IO"
 description = "Basic test"
 exp_file = "tests/basic_test_out"
 exp_retvar = 0
-
-[[testcases]]
-name = "basic_unit"
-testcase_type = "UnitTest"
-description = "basic unit test"
-fname = "test_add"
