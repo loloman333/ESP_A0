@@ -1,28 +1,26 @@
 ### Hello World
 
-Schreiben Sie ein Programm, welches den Text "Hi, my student-ID is %d\n" ausgibt, wobei %d durch Ihre Matrikelnummer ersetzt wird.
-und dann die Abgabefrist so wie bei den anderen Assignments.
-
+Schreiben Sie ein Programm, welches den Text `"Hi, my student-ID is %d\n"` ausgibt, wobei %d durch Ihre Matrikelnummer ersetzt wird.
 
 
 ## Nützliche Befehle
 
-Kompiliere deinen Code:
+Kompilieren Sie den Code:
 ```
 make
 ```
 
-Führe deinen Code aus:
+Führen Sie den Code aus:
 ```
 make run
 ```
 
-Lade updates für das assignment runter:
+Laden Sie neue Updates von diesem Assignment runter:
 ```
 make update
 ```
 
 ## Spezifikation
- * abzugebende Datei: main.c
+ * abzugebende Datei: a0.c
  * Abgabe bis *spätestens*: 25.10.2020 23:59 (in Österreich gültige Zeit)
- * Abgabe muss über Gitlab stattfinden. Ein einfacher Commit auf den Master Branch reicht
+ * Abgabe muss über Gitlab stattfinden. Ein einfacher Commit reicht
