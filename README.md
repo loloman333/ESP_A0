@@ -23,4 +23,4 @@ make update
 ## Spezifikation
  * abzugebende Datei: a0.c
  * Abgabe bis *spätestens*: 25.10.2020 23:59 (in Österreich gültige Zeit)
- * Abgabe muss über Gitlab stattfinden. Ein einfacher Commit reicht
+ * Abgabe muss über Gitlab stattfinden. Ein einfacher Commit und Push reicht
